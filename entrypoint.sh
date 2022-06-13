@@ -8,8 +8,8 @@ pactl load-module module-null-sink sink_name=SpeakerOutput sink_properties=devic
 pacmd load-module module-virtual-source source_name=VirtualMicrophone
 
 # Stand up a local server that serves the media files within opt/media
-cd opt/media
-python -m SimpleHTTPServer &>/dev/null
+#cd opt/media
+#python -m SimpleHTTPServer &>/dev/null
 
 # Start Selenium Chrome Node
 /opt/bin/entry_point.sh
